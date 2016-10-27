@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+.zoom img {
+    -webkit-transition: all .3s ease;
+    /* Safari and Chrome */
+    -moz-transition: all .3s ease;
+    /* Firefox */
+    -o-transition: all .3s ease;
+    /* IE 9 */
+    -ms-transition: all .3s ease;
+    /* Opera */
+    transition: all .3s ease;
+}
+
+.zoom img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.10);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.10);
+    /* Firefox */
+    -ms-transform: scale(1.10);
+    /* IE 9 */
+    -o-transform: translatZ(0) scale(1.10);
+    /* Opera */
+    transform: translatZ(0) scale(1.10);
+}
+
+.highlight:hover {
+    box-shadow: 4px 3px 20px #ccc;
+    -webkit-transition: box-shadow 0.5s;
+    /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+}
