@@ -1,65 +1,34 @@
 <div class="container marketing">
     <!-- START THE FEATURETTES -->
+    <button (click)="getAppList()">Get All Apps</button>
+    <div *ngFor="let productInfo of appInfo; let i = index">
+        <div *ngIf="i%2 == 0" class="row featurette">
+            <div class="col-md-7 col-md-push-5 highlight">
+                <h2 class="featurette-heading">{{productInfo.app_name}} </h2>
+                <h4><span class="text-muted">{{productInfo.app_sub_info}}</span></h4>
+                <p class="lead">{{productInfo.app_desc}}</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7 zoom">
+                <img class="featurette-image img-responsive center-block" src="../app/images/usermgmt.png" alt="User Management">
+            </div>
 
-    <!-- <hr class="featurette-divider"> -->
-    <div class="row featurette">
-        <div class="col-md-7 highlight">
-            <h2 class="featurette-heading">Inbox </h2>
-            <h4><span class="text-muted">An integrated email notification system</span></h4>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-        <div class="col-md-5 zoom">
-            <img class="featurette-image img-responsive center-block" src="../app/images/inbox.png" alt="Inbox">
-        </div>
-    </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette ">
-        <div class="col-md-7 col-md-push-5 highlight">
-            <h2 class="featurette-heading">Fraud Resolution </h2>
-            <h4><span class="text-muted">Tool for make sure to capture suspected person.</span></h4>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7 zoom">
-            <img class="featurette-image img-responsive center-block" src="../app/images/fr.png" alt="Fraud Resolution">
-        </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 highlight">
-            <h2 class="featurette-heading">Scenario Authorizing Tool </h2>
-            <h4><span class="text-muted">Publish customized cases for making it robust using AI.</span></h4>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 zoom">
-            <img class="featurette-image img-responsive center-block" src="../app/images/sat.png" alt="Scenario Authorizing Tool">
+        <div *ngIf="i%2 !== 0" class="row featurette">
+            <hr class="featurette-divider">
+            <div class="col-md-7  highlight">
+                <h2 class="featurette-heading">{{productInfo.app_name}} </h2>
+                <h4><span class="text-muted">{{productInfo.app_sub_info}}</span></h4>
+                <p class="lead">{{productInfo.app_desc}}</p>
+            </div>
+            <div class="col-md-5 zoom">
+                <img class="featurette-image img-responsive center-block" src="../app/images/usermgmt.png" alt="User Management">
+            </div>
         </div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-        <div class="col-md-7 col-md-push-5 highlight">
-            <h2 class="featurette-heading">User Management </h2>
-            <h4><span class="text-muted">Behold the power of preventing users to access unauthorized applications.</span></h4>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7 zoom">
-            <img class="featurette-image img-responsive center-block" src="../app/images/usermgmt.png" alt="User Management">
-        </div>
-    </div>
-
-
-    <!-- /END THE FEATURETTES -->
-
-
     <!-- FOOTER -->
     <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
-
 </div>
