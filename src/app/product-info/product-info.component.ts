@@ -24,4 +24,8 @@ export class ProductInfoComponent {
       }
     );
   }
+
+  ngOnInit() {
+    this.getAppList();
+  }
 }
