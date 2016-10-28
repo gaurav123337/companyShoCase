@@ -1,0 +1,29 @@
+[{
+    "app_name": "INBOX",
+    "ap_Id": "inbox",
+    "app_desc": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+    "app_sub_info": "An integrated email notification system",
+    "more_info": "Link needed",
+    "app_image_source": "../app/images/inbox.png"
+}, {
+    "app_name": "User Management",
+    "ap_Id": "usermgmt",
+    "app_desc": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+    "app_sub_info": "Behold the power of preventing users to access unauthorized applications.",
+    "more_info": "Link needed",
+    "app_image_source": "../app/images/usermgmt.png"
+}, {
+    "app_name": "Scenario Authorizing Tool",
+    "ap_Id": "sat",
+    "app_desc": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+    "app_sub_info": "Publish customized cases for making it robust using AI.",
+    "more_info": "Link needed",
+    "app_image_source": "../app/images/sat.png"
+}, {
+    "app_name": "Fraud Resolution",
+    "ap_Id": "usermgmt",
+    "app_desc": "Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.",
+    "app_sub_info": "Tool for make sure to capture suspected person.",
+    "more_info": "Link needed",
+    "app_image_source": "../app/images/fr.png"
+}]

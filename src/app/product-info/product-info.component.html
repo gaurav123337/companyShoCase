@@ -9,26 +9,26 @@
                 <p class="lead">{{productInfo.app_desc}}</p>
             </div>
             <div class="col-md-5 col-md-pull-7 zoom">
-                <img class="featurette-image img-responsive center-block" src="../app/images/usermgmt.png" alt="User Management">
+                <img class="featurette-image img-responsive center-block" src="{{productInfo.app_image_source}}" alt="User Management ">
             </div>
 
         </div>
 
-        <div *ngIf="i%2 !== 0" class="row featurette">
-            <hr class="featurette-divider">
-            <div class="col-md-7  highlight">
-                <h2 class="featurette-heading">{{productInfo.app_name}} </h2>
-                <h4><span class="text-muted">{{productInfo.app_sub_info}}</span></h4>
-                <p class="lead">{{productInfo.app_desc}}</p>
+        <div *ngIf="i%2 !==0 " class="row featurette ">
+            <hr class="featurette-divider ">
+            <div class="col-md-7 highlight ">
+                <h2 class="featurette-heading ">{{productInfo.app_name}} </h2>
+                <h4><span class="text-muted ">{{productInfo.app_sub_info}}</span></h4>
+                <p class="lead ">{{productInfo.app_desc}}</p>
             </div>
-            <div class="col-md-5 zoom">
-                <img class="featurette-image img-responsive center-block" src="../app/images/usermgmt.png" alt="User Management">
+            <div class="col-md-5 zoom ">
+                <img class="featurette-image img-responsive center-block" src="{{productInfo.app_image_source}} " alt="User Management ">
             </div>
         </div>
     </div>
     <!-- FOOTER -->
     <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right "><a href="# ">Back to top</a></p>
+        <p>&copy; 2016 Company, Inc. &middot; <a href="# ">Privacy</a> &middot; <a href="# ">Terms</a></p>
     </footer>
 </div>
