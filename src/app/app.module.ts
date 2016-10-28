@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { routing } from './app.routing';
+import { ProductDetailInfoComponent } from './product-detail-info/product-detail-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductInfoComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ProductDetailInfoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

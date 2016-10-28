@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ProductInfo } from './product-info.modal';
 
 import { ProductListService } from './product-list.service';
@@ -11,7 +11,9 @@ import { ProductListService } from './product-list.service';
   providers: [ProductListService]
 })
 export class ProductInfoComponent {
+  @Input()
   productInfo : ProductInfo;
+  
   appInfo:  ProductInfo[];
   constructor(private productListService: ProductListService) { }
   
