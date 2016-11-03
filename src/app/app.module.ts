@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { routing } from './app.routing';
 import { ProductDetailInfoComponent } from './product-detail-info/product-detail-info.component';
 
 @NgModule({
@@ -21,8 +20,7 @@ import { ProductDetailInfoComponent } from './product-detail-info/product-detail
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routing
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

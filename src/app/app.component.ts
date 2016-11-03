@@ -9,10 +9,10 @@ import { ProductInfo } from './product-info/product-info.modal';
 })
 export class AppComponent {
   title = 'app works!?....';
-  selectedProduct : ProductInfo ;
+  //selectedProduct : ProductInfo ;
   
-   onSelect(productInfo: ProductInfo): void {
-    this.selectedProduct = productInfo;
-  }
+  //  onSelect(productInfo: ProductInfo): void {
+  //   this.selectedProduct = productInfo;
+  // }
 
 }

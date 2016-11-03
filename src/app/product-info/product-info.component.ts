@@ -13,7 +13,6 @@ import { ProductListService } from './product-list.service';
 export class ProductInfoComponent {
   @Input()
   productInfo : ProductInfo;
-  
   appInfo:  ProductInfo[];
   constructor(private productListService: ProductListService) { }
   
@@ -25,6 +24,10 @@ export class ProductInfoComponent {
         console.log(this.appInfo,"this.appInfo");
       }
     );
+  }
+
+  gotoDetail(productInfo: ProductInfo) {
+    console.log(productInfo,"productInfo");
   }
 
   ngOnInit() {

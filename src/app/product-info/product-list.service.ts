@@ -12,5 +12,8 @@ export class ProductListService {
    getAppList(){    
     return this.http.get('app/dataJson/appInfo.json').map((res:Response) => res.json());
   }
-
+  
+  getProducts(){
+    return this.appList;
+  }
 }

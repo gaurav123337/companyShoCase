@@ -1,7 +1,7 @@
 <div class="container marketing">
     <!-- START THE FEATURETTES -->
     <div *ngFor="let productInfo of appInfo; let i = index">
-        <div *ngIf="i%2 == 0" class="row featurette">
+        <div *ngIf="i%2 == 0" class="row featurette" (click)="gotoDetail(productInfo)">
             <div class="col-md-7 col-md-push-5 highlight">
                 <h2 class="featurette-heading">{{productInfo.app_name}} </h2>
                 <h4><span class="text-muted">{{productInfo.app_sub_info}}</span></h4>
@@ -13,7 +13,7 @@
 
         </div>
 
-        <div *ngIf="i%2 !==0 " class="row featurette ">
+        <div *ngIf="i%2 !==0 " class="row featurette " (click)="gotoDetail(productInfo)">
             <hr class="featurette-divider ">
             <div class="col-md-7 highlight ">
                 <h2 class="featurette-heading ">{{productInfo.app_name}} </h2>
