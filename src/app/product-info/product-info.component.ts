@@ -14,6 +14,8 @@ export class ProductInfoComponent {
   @Input()
   productInfo : ProductInfo;
   appInfo:  ProductInfo[];
+  selectedProduct: ProductInfo;
+
   constructor(private productListService: ProductListService) { }
   
    getAppList() {
@@ -26,8 +28,14 @@ export class ProductInfoComponent {
     );
   }
 
-  gotoDetail(productInfo: ProductInfo) {
-    console.log(productInfo,"productInfo");
+  // gotoDetail(productInfo: ProductInfo) {
+  //   console.log(productInfo,"productInfo");
+  //   this.productInfo = productInfo;
+  // }
+
+  gotoDetail(productInfo: ProductInfo) {    
+    this.selectedProduct = productInfo;
+    console.log( this.selectedProduct," this.selectedProduct");
   }
 
   ngOnInit() {

@@ -18,9 +18,5 @@ export class ProductDetailInfoComponent {
 
   @Input()
   productDetailInfo: ProductInfo;
-
-  
-
-  
-
+  //productInfo : ProductInfo; 
 }
